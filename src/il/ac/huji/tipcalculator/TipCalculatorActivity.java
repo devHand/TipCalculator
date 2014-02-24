@@ -25,12 +25,19 @@ public class TipCalculatorActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 					try{
+						String txt = amountTxt.getText().toString();
+						if(txt.equals(""))
+						{
+							tipText.setText("Please insert an amount");
+						}
+						else{
 							float amount = Float.parseFloat(amountTxt.getText().toString());
 							amount = amount*12/100;
 							if(roundCheck.isChecked()){
 								amount = Math.round(amount);
 							}
 							tipText.setText("Tip: $" + Float.toString(amount));
+						}
 						
 					}
 					catch(Exception e)
