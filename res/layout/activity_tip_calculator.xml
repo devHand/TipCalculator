@@ -9,7 +9,7 @@
     tools:context=".TipCalculatorActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewBill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bill" />
@@ -20,7 +20,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_toRightOf="@+id/btnCalculate"
 	    android:ems="10"
-	    android:hint="insert a number"
+	    android:hint="@string/hint"
 	    android:inputType="numberDecimal"
 	    android:text="" />
 	
@@ -28,8 +28,8 @@
         android:id="@+id/chkRound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textViewBill"
+        android:layout_below="@+id/textViewBill"
         android:layout_marginTop="14dp"
         android:text="@string/CheakBoxText" />
 

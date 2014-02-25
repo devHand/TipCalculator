@@ -31,7 +31,7 @@ public class TipCalculatorActivity extends Activity {
 							tipText.setText("Please insert an amount");
 						}
 						else{
-							float amount = Float.parseFloat(amountTxt.getText().toString());
+							float amount = Float.parseFloat(txt);
 							amount = amount*12/100;
 							if(roundCheck.isChecked()){
 								amount = Math.round(amount);
